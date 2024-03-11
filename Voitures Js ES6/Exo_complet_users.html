@@ -43,7 +43,7 @@
 
 
 
-  <h1 class="text-center">Voitures sans class</h1>
+  <h1 class="text-center">Clients sans class</h1>
   <br>
   <div class="container-fluid">
     <div id="message"></div>
@@ -69,22 +69,21 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ajouter une nouvelle voiture</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Ajouter un nouveau client</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtMarqueAjout" placeholder="Enter marque" name="marqueAjout">
-          <label for="pwd">Marque</label>
+          <input type="text" class="form-control" id="txtNomAjout" placeholder="Enter nom" name="nomAjout" required>
+          <label for="pwd" required>Nom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCouleurAjout" placeholder="Enter couleur" name="couleurAjout">
-          <label for="pwd">Couleur</label>
+          <input type="text" class="form-control" id="txtPrenomAjout" placeholder="Enter prenom" name="prenomAjout">
+          <label for="pwd">Prénom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCylindreeAjout" placeholder="Enter cylindree"
-            name="cylindreeAjout">
-          <label for="pwd">Cylindrée</label>
+          <input type="email" class="form-control" id="txtMailAjout" placeholder="Enter mail" name="mailAjout">
+          <label for="pwd">Mail</label>
         </div>
 
         <div class="modal-footer">
@@ -94,10 +93,6 @@
       </div>
     </div>
   </div>
-
-
-
-
 
 
   <!--Fenetre modal VUE-->
@@ -110,23 +105,21 @@
         </div>
 
         <div class="form-floating mb-3 mt-3">
-          <input type="text" class="form-control" id="txtCodeVue" placeholder="Enter code" name="codeVue" readonly>
-          <label for="email">Code</label>
+          <input type="text" class="form-control" id="txtIdVue" placeholder="Enter id" name="idVue" readonly>
+          <label for="email">Id</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtMarqueVue" placeholder="Enter marque" name="marqueVue"
-            readonly>
-          <label for="pwd">Marque</label>
+          <input type="text" class="form-control" id="txtNomVue" placeholder="Enter nom" name="nomVue" readonly>
+          <label for="pwd">Nom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCouleurVue" placeholder="Enter couleur" name="couleurVue"
+          <input type="text" class="form-control" id="txtPrenomVue" placeholder="Enter prenom" name="prenomVue"
             readonly>
-          <label for="pwd">Couleur</label>
+          <label for="pwd">Prénom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCylindreeVue" placeholder="Enter cylindree" name="cylindreeVue"
-            readonly>
-          <label for="pwd">Cylindrée</label>
+          <input type="text" class="form-control" id="txtMailVue" placeholder="Enter mail" name="mailVue" readonly>
+          <label for="pwd">Mail</label>
         </div>
 
         <div class="modal-footer">
@@ -147,21 +140,20 @@
         </div>
 
         <div class="form-floating mb-3 mt-3">
-          <input type="text" class="form-control" id="txtCodeModif" placeholder="Enter code" name="codeModif" readonly>
-          <label for="email">Code</label>
+          <input type="text" class="form-control" id="txtIdModif" placeholder="Enter id" name="idModif" readonly>
+          <label for="email">Id</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtMarqueModif" placeholder="Enter marque" name="marqueModif">
-          <label for="pwd">Marque</label>
+          <input type="text" class="form-control" id="txtNomModif" placeholder="Enter nom" name="nomModif">
+          <label for="pwd">Nom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCouleurModif" placeholder="Enter couleur" name="couleurModif">
-          <label for="pwd">Couleur</label>
+          <input type="text" class="form-control" id="txtPrenomModif" placeholder="Enter prenom" name="prenomModif">
+          <label for="pwd">Prenom</label>
         </div>
         <div class="form-floating mt-3 mb-3">
-          <input type="text" class="form-control" id="txtCylindreeModif" placeholder="Enter cylindree"
-            name="cylindreeModif">
-          <label for="pwd">Cylindrée</label>
+          <input type="email" class="form-control" id="txtMailModif" placeholder="Enter mail" name="MailModif">
+          <label for="pwd">Mail</label>
         </div>
 
         <div class="modal-footer">
@@ -182,7 +174,7 @@
         </div>
 
         <div class="form-floating mt-3 mb-3 modal-body">
-          <input type="text" class="form-control" id="txtCodeSuppr" placeholder="supprimer" name="supprimer" readonly>
+          <input type="text" class="form-control" id="txtIdSuppr" placeholder="supprimer" name="supprimer" readonly>
           <label for="pwd">SUPPRIMER LA LIGNE ?</label>
         </div>
 
@@ -200,7 +192,7 @@
   <!-- <script src="http://code.jquery.com/jquery.js"></script> -->
   <script src="./Js/js_html.js"></script>
   <script src="./Js/80table_ES6.js"></script>
-  <script src="./Js/init.js"></script>
+  <script src="./Js/init_users.js"></script>
   <script src="./Js/ajax_Js_ES6.js"></script>
   <!-------------------------------------
       		CDN JS pour BOOTSTRAP  
@@ -283,8 +275,8 @@
 
 
       //data = les données
-      tab.data = myObj.voitures.records;
-      tab.header = ["Code", "Marque", "Couleur", "Cylindrée"];
+      tab.data = myObj.users.records;
+      tab.header = ["Id", "Nom", "Prénom", "Mail"];
       tab.class_modif = "";//class sans Bootstrap
       tab.class_suppr = "";
       tab.class_vue = "";
@@ -295,9 +287,9 @@
       tab.icone_suppr = "btn-sm fas fa-trash fa-sm";
 
       //Les méthodes
-      tab.fonction_modif = modifVoiture;
-      tab.fonction_suppr = supprVoiture;
-      tab.fonction_vue = vueVoiture;
+      tab.fonction_modif = modifClient;
+      tab.fonction_suppr = supprClient;
+      tab.fonction_vue = vueClient;
 
       //Les class BS
       tab.BS_class_vue = "btn btn-success";//Class Bootstrap
@@ -319,7 +311,7 @@
     }
 
     function afficher_Liste() {
-      // Liste des voitures
+      // Liste des clients
       get(url, GetAjax, erreur);
     }
 
@@ -350,8 +342,8 @@
 
     //Function Ajout nouvelle voiture
     //Sur le bouton enregistrer de la fenetre modal Nouveau avec id="btnAjoutEnreg"
-    function RetourVoiture_ajout() {
-      message("success", "Nouvelle voiture ajoutée");
+    function RetourClient_ajout() {
+      message("success", "Nouveau client ajoutée");
       afficher_Liste();
 
     }
@@ -360,9 +352,9 @@
     function Get_zones_ajout() {
       // Au format JSON
       let obj = {};
-      obj.marque = document.getElementById("txtMarqueAjout").value;
-      obj.couleur = document.getElementById("txtCouleurAjout").value;
-      obj.cylindree = document.getElementById("txtCylindreeAjout").value;
+      obj.nom = document.getElementById("txtNomAjout").value;
+      obj.prenom = document.getElementById("txtPrenomAjout").value;
+      obj.email = document.getElementById("txtMailAjout").value;
       return JSON.stringify(obj);
     }
 
@@ -373,13 +365,13 @@
 
     /////////////////////////////////////////////////////////////////////////////////
     //function_modif pour le tableau pas touch
-    function modifVoiture(e) {
+    function modifClient(e) {
       //alert("Click sur modif voiture");
       let valeurs = e.target.value.split(",");
-      document.getElementById("txtCodeModif").value = valeurs[0];
-      document.getElementById("txtMarqueModif").value = valeurs[1];
-      document.getElementById("txtCouleurModif").value = valeurs[2];
-      document.getElementById("txtCylindreeModif").value = valeurs[3];
+      document.getElementById("txtIdModif").value = valeurs[0];
+      document.getElementById("txtNomModif").value = valeurs[1];
+      document.getElementById("txtPrenomModif").value = valeurs[2];
+      document.getElementById("txtMailModif").value = valeurs[3];
     }
 
 
@@ -387,17 +379,17 @@
     //id = btnModifEnreg
     function RetourAjax_modif(e) {
       //alert("Voiture bien modifiée avec le code : entrée fonction RetourAjax");
-      message("primary", "Modification voiture enregistrée");
+      message("primary", "Modification client enregistrée");
       afficher_Liste();
     }
 
     function Get_zones_modif(e) {
       // Au format JSON
       let obj = {};
-      obj.code = document.getElementById("txtCodeModif").value;
-      obj.marque = document.getElementById("txtMarqueModif").value;
-      obj.couleur = document.getElementById("txtCouleurModif").value;
-      obj.cylindree = document.getElementById("txtCylindreeModif").value;
+      obj.id = document.getElementById("txtIdModif").value;
+      obj.prenom = document.getElementById("txtNomModif").value;
+      obj.nom = document.getElementById("txtPrenomModif").value;
+      obj.email = document.getElementById("txtMailModif").value;
       return JSON.stringify(obj);
     }
 
@@ -407,12 +399,12 @@
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //function_vue
-    function vueVoiture(e) {
+    function vueClient(e) {
       let valeurs = e.target.value.split(",");
-      document.getElementById("txtCodeVue").value = valeurs[0];
-      document.getElementById("txtMarqueVue").value = valeurs[1];
-      document.getElementById("txtCouleurVue").value = valeurs[2];
-      document.getElementById("txtCylindreeVue").value = valeurs[3];
+      document.getElementById("txtIdVue").value = valeurs[0];
+      document.getElementById("txtNomVue").value = valeurs[1];
+      document.getElementById("txtPrenomVue").value = valeurs[2];
+      document.getElementById("txtMailVue").value = valeurs[3];
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -420,7 +412,7 @@
 
     function RetourAjax_suppr(e) {
       //alert("Supprimer");
-      message("danger", "Voiture supprimée");
+      message("danger", "Compte client supprimée");
       afficher_Liste();
     }
 
@@ -428,10 +420,10 @@
       alert("Erreur de la suppression");
     }
 
-    function supprVoiture(e) {
+    function supprClient(e) {
       // alert("Click sur supp voiture");
       let valeurs = e.target.value.split(",");
-      document.getElementById("txtCodeSuppr").value = valeurs[0];
+      document.getElementById("txtIdSuppr").value = valeurs[0];
     }
 
 
@@ -453,7 +445,7 @@
       let btnajout = document.getElementById("btnAjoutEnreg");
       btnajout.addEventListener("click", () => {
         let params = Get_zones_ajout();
-        post(url, params, RetourVoiture_ajout, Erreur_Ajax_ajout);
+        post(url, params, RetourClient_ajout, Erreur_Ajax_ajout);
       }, false);
 
       //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -461,7 +453,7 @@
       //bouton enregistrer dans la modal modif
       let btnEnreg = document.getElementById("btnModifEnreg");
       btnEnreg.addEventListener("click", (e) => {
-        let code = document.getElementById("txtCodeModif").value;
+        let code = document.getElementById("txtIdModif").value;
         let params = Get_zones_modif();
         put(url + "/" + code, params, RetourAjax_modif, Erreur_Ajax_modif);
       }, false);
@@ -471,7 +463,7 @@
       let btnSupp = document.getElementById("btnSupprOui");
       btnSupp.addEventListener("click", (e) => {
         let valeurs = e.target.value.split(",");
-        let code = document.getElementById("txtCodeSuppr").value;
+        let code = document.getElementById("txtIdSuppr").value;
         del(url + "/" + code, RetourAjax_suppr, Erreur_Ajax_suppr);
       }, false);
     }, false);
